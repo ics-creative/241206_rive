@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "parcel ./src/index.html",
-    "build": "parcel build ./src/index.html --dist-dir docs",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
     "fix": "biome check --write"
   },
   "license": "MIT",
@@ -13,7 +14,6 @@
   },
   "devDependencies": {
     "@biomejs/biome": "2.5.2",
-    "parcel": "^2.13.2",
-    "parcel-reporter-static-files-copy": "^1.5.3"
+    "vite": "^7.0.0"
   }
 }
