@@ -1,4 +1,4 @@
-import { Rive } from "@rive-app/canvas";
+import { Rive } from "@rive-app/webgl2";
 
 const init = () => {
   const star = new Rive({
@@ -20,7 +20,7 @@ const init = () => {
     onLoad: () => {
       fish.resizeDrawingSurfaceToCanvas();
     },
-  })
+  });
 };
 
 document.addEventListener("DOMContentLoaded", init);
